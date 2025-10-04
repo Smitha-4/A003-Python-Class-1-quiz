@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python print() Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load jsPDF library for client-side PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body class="">
+
+    <div id="app" class="quiz-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Python `print()` Function Quiz</h1>
+            <p>Test your knowledge of key parameters like `sep` and `end`.</p>
+        </header>
+
+        <!-- Quiz Area -->
+        <div id="quiz-area">
+            <!-- Questions will be rendered here -->
+            <div id="loader">
+                <div class="spinner"></div>
+                <p style="margin-top: 1rem; color: #9ca3af;">Loading quiz content...</p>
+            </div>
+        </div>
+
+        <!-- Results Area (Hidden initially) -->
+        <div id="results-area" class="results-area" style="display: none;">
+            <h2>Quiz Complete!</h2>
+            <p id="score-summary"></p>
+
+            <button id="restart-button" class="main-button restart-button">
+                Restart Quiz
+            </button>
+            <button id="email-button" class="main-button email-button">
+                Email Smitha (Attach the downloaded PDF)
+            </button>
+
+            <h3>Detailed Review</h3>
+            <div id="review-list">
+                <!-- Detailed results will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+   </body>
+<script src="main.js"></script>
+</html>
